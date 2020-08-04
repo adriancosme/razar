@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">RAZAR</string>
+    <string name="desc_logo_img">Logo application</string>
+    <string name="desc_bg_img">BG login</string>
+    <string name="section_sign_up_title">Crea una cuenta</string>
+    <string name="name_form">Nombre</string>
+    <string name="email_form">Correo electrónico</string>
+    <string name="password_form">Contraseña</string>
+    <string name="confirm_password_form">Confirmar contraseña</string>
+    <string name="join_us_button">Unete</string>
+    <string name="suggestion_login_social_networks">O accede a través de tus redes sociales</string>
+    <string name="suggestion_login">¿Ya estas registrado?</string>
+    <string name="suggestion_login_button">Inicia sesión</string>
 </resources>
