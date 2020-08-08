@@ -11,4 +11,8 @@
     <string name="suggestion_login_social_networks">O accede a través de tus redes sociales</string>
     <string name="suggestion_login">¿Ya estas registrado?</string>
     <string name="suggestion_login_button">Inicia sesión</string>
+    <string name="suggestion_register">¿Aún no estas registrado?</string>
+    <string name="register_suggestion">Registrate</string>
+    <string name="forgot_password_text">¿Olvidaste tu contraseña?</string>
+    <string name="recover_password">Recuperar contraseña</string>
 </resources>

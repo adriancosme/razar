@@ -1,17 +1,18 @@
-package com.integradora.razar.presentation.login.view
+package com.integradora.razar.presentation.auth.register.view
 
 import android.os.Bundle
 import com.integradora.razar.R
 import com.integradora.razar.base.BaseActivity
 
-class LoginActivity: BaseActivity() {
+class RegisterActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.LoginTheme)
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.register_activity)
     }
 
     override fun getLayout(): Int {
-        return R.layout.login_activity
+        return R.layout.register_activity
     }
 }
