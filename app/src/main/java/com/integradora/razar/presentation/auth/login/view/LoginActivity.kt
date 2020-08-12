@@ -5,9 +5,10 @@ import android.os.Bundle
 import com.integradora.razar.R
 import com.integradora.razar.RazarApp
 import com.integradora.razar.base.BaseActivity
-import com.integradora.razar.presentation.home.view.HomeActivity
+import com.integradora.razar.presentation.main.view.MainActivity
 import com.integradora.razar.presentation.auth.login.LoginContract
 import com.integradora.razar.presentation.auth.login.presenter.SignInPresenter
+import com.integradora.razar.presentation.auth.register.view.RegisterActivity
 import kotlinx.android.synthetic.main.login_activity.*
 import javax.inject.Inject
 
@@ -23,6 +24,9 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
         presenter.attachView(this)
         btn_sign_in.setOnClickListener {
             signIn()
+        }
+        txtv_register.setOnClickListener{
+            navigateToRegister()
         }
     }
 
@@ -56,13 +60,13 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
     }
 
     override fun navigateToHome() {
-        val intent = Intent(this, HomeActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
     }
 
     override fun navigateToRegister() {
-        TODO("Not yet implemented")
+        startActivity(Intent(this, RegisterActivity::class.java))
     }
 
     override fun navigateToPasswordRecover() {

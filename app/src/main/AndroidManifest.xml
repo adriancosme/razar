@@ -14,7 +14,7 @@
         android:name=".RazarApp"
         android:theme="@style/AppTheme">
         <activity android:name=".presentation.auth.register.view.RegisterActivity"></activity>
-        <activity android:name=".presentation.home.view.HomeActivity"></activity>
+        <activity android:name=".presentation.main.view.MainActivity"></activity>
         <activity
             android:name=".presentation.auth.login.view.LoginActivity"
             android:theme="@style/SplashTheme">
