@@ -48,7 +48,7 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
 
     override fun signIn() {
         val email = etxt_email.text.toString().trim()
-        val password = etxt_password.text.toString().trim()
+        val password = etxt_password_login.text.toString().trim()
         if (presenter.checkEmptyFields(
                 email,
                 password

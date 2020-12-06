@@ -1,10 +1,12 @@
 package com.integradora.razar.domain.interactor.auth.registerinteractor
 
+import com.integradora.razar.network.RetrofitClient
+
 interface SignUpInteractor {
-    interface RegisterCallback{
+    interface RegisterCallback {
         fun onRegisterSuccess()
-        fun onRegisterFailure(errorMsg:String)
+        fun onRegisterFailure(errorMsg: String)
     }
 
-    fun signUp(fullname:String,email:String,password:String,listener:RegisterCallback)
+    fun signUp(username: String, password: String)
 }
